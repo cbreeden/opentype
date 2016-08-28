@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Encoding","An encoding of a char-to-glyph mapping."]],"struct":[["CharMapping","A char-to-glyph mapping."],["Encoding4","A char-to-glyph encoding in format 4."],["Encoding6","A char-to-glyph encoding in format 6."],["Header","The header of a char-to-glyph mapping."],["Record","A record of a char-to-glyph mapping."]]});

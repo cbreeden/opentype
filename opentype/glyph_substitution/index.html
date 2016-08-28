@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `glyph_substitution` mod in crate `opentype`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, glyph_substitution">
+
+    <title>opentype::glyph_substitution - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opentype</a></p><script>window.sidebarCurrent = {name: 'glyph_substitution', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>opentype</a>::<wbr><a class='mod' href=''>glyph_substitution</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3713' class='srclink' href='../../src/opentype/src/glyph_substitution/mod.rs.html#1-14' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The <a href="https://www.microsoft.com/typography/otspec/GSUB.htm">glyph-substitution table</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.AlternateSubstitution.html'
+                                  title='opentype::glyph_substitution::AlternateSubstitution'>AlternateSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting one glyph with one of many glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Alternates.html'
+                                  title='opentype::glyph_substitution::Alternates'>Alternates</a></td>
+                           <td class='docblock short'>
+                                <p>A set of alternate substitutions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainClassRule.html'
+                                  title='opentype::glyph_substitution::ChainClassRule'>ChainClassRule</a></td>
+                           <td class='docblock short'>
+                                <p>A chaining class substitution rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainClassRules.html'
+                                  title='opentype::glyph_substitution::ChainClassRules'>ChainClassRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of chaining class substitution rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextSubstitution1.html'
+                                  title='opentype::glyph_substitution::ChainContextSubstitution1'>ChainContextSubstitution1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a chaining context in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextSubstitution2.html'
+                                  title='opentype::glyph_substitution::ChainContextSubstitution2'>ChainContextSubstitution2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a chaining context in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextSubstitution3.html'
+                                  title='opentype::glyph_substitution::ChainContextSubstitution3'>ChainContextSubstitution3</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a chaining context in format 3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainRule.html'
+                                  title='opentype::glyph_substitution::ChainRule'>ChainRule</a></td>
+                           <td class='docblock short'>
+                                <p>A chaining substitution rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainRules.html'
+                                  title='opentype::glyph_substitution::ChainRules'>ChainRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of chaining substitution rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClassRule.html'
+                                  title='opentype::glyph_substitution::ClassRule'>ClassRule</a></td>
+                           <td class='docblock short'>
+                                <p>A class substitution rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClassRules.html'
+                                  title='opentype::glyph_substitution::ClassRules'>ClassRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of class substitution rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextSubstitution1.html'
+                                  title='opentype::glyph_substitution::ContextSubstitution1'>ContextSubstitution1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a context in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextSubstitution2.html'
+                                  title='opentype::glyph_substitution::ContextSubstitution2'>ContextSubstitution2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a context in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextSubstitution3.html'
+                                  title='opentype::glyph_substitution::ContextSubstitution3'>ContextSubstitution3</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a context in format 3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExtensionSubstitution.html'
+                                  title='opentype::glyph_substitution::ExtensionSubstitution'>ExtensionSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for other types of substitution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ligature.html'
+                                  title='opentype::glyph_substitution::Ligature'>Ligature</a></td>
+                           <td class='docblock short'>
+                                <p>A ligature substitution.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.LigatureSubstitution.html'
+                                  title='opentype::glyph_substitution::LigatureSubstitution'>LigatureSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting multiple glyphs with one glyph.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ligatures.html'
+                                  title='opentype::glyph_substitution::Ligatures'>Ligatures</a></td>
+                           <td class='docblock short'>
+                                <p>A set of ligature substitutions.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MultipleSubstitution.html'
+                                  title='opentype::glyph_substitution::MultipleSubstitution'>MultipleSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting one glyph with more than one glyph.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ReverseChainContextSubstitution.html'
+                                  title='opentype::glyph_substitution::ReverseChainContextSubstitution'>ReverseChainContextSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in reverse order in a chaining context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rule.html'
+                                  title='opentype::glyph_substitution::Rule'>Rule</a></td>
+                           <td class='docblock short'>
+                                <p>A substitution rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rules.html'
+                                  title='opentype::glyph_substitution::Rules'>Rules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of substitution rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Sequence.html'
+                                  title='opentype::glyph_substitution::Sequence'>Sequence</a></td>
+                           <td class='docblock short'>
+                                <p>A substitution sequence of glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleSubstitution1.html'
+                                  title='opentype::glyph_substitution::SingleSubstitution1'>SingleSubstitution1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting one glyph with one glyph in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleSubstitution2.html'
+                                  title='opentype::glyph_substitution::SingleSubstitution2'>SingleSubstitution2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting one glyph with one glyph in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Substitution.html'
+                                  title='opentype::glyph_substitution::Substitution'>Substitution</a></td>
+                           <td class='docblock short'>
+                                <p>A substitution operation.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ChainContextSubstitution.html'
+                                  title='opentype::glyph_substitution::ChainContextSubstitution'>ChainContextSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a chaining context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ContextSubstitution.html'
+                                  title='opentype::glyph_substitution::ContextSubstitution'>ContextSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting glyphs in a context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SingleSubstitution.html'
+                                  title='opentype::glyph_substitution::SingleSubstitution'>SingleSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A table for substituting one glyph with one glyph.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Table.html'
+                                  title='opentype::glyph_substitution::Table'>Table</a></td>
+                           <td class='docblock short'>
+                                <p>An inner table of a glyph-substitution table.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlyphSubstitution.html'
+                                  title='opentype::glyph_substitution::GlyphSubstitution'>GlyphSubstitution</a></td>
+                           <td class='docblock short'>
+                                <p>A glyph-substitution table.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opentype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

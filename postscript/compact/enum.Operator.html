@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Operator` enum in crate `postscript`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Operator">
+
+    <title>postscript::compact::Operator - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>postscript</a>::<wbr><a href='index.html'>compact</a></p><script>window.sidebarCurrent = {name: 'Operator', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>postscript</a>::<wbr><a href='index.html'>compact</a>::<wbr><a class='enum' href=''>Operator</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-489' class='srclink' href='../../src/postscript/compact/operation.rs.html#112' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Operator {
+    Version,
+    Notice,
+    FullName,
+    FamilyName,
+    Weight,
+    FontBBox,
+    BlueValues,
+    OtherBlues,
+    FamilyBlues,
+    FamilyOtherBlues,
+    StdHW,
+    StdVW,
+    UniqueID,
+    XUID,
+    CharSet,
+    Encoding,
+    CharStrings,
+    Private,
+    Subrs,
+    DefaultWidthX,
+    NominalWidthX,
+    Copyright,
+    IsFixedPitch,
+    ItalicAngle,
+    UnderlinePosition,
+    UnderlineThickness,
+    PaintType,
+    CharStringType,
+    FontMatrix,
+    StrokeWidth,
+    BlueScale,
+    BlueShift,
+    BlueFuzz,
+    StemSnapH,
+    StemSnapV,
+    ForceBold,
+    LanguageGroup,
+    ExpansionFactor,
+    InitialRandomSeed,
+    SyntheticBase,
+    PostScript,
+    BaseFontName,
+    BaseFontBlend,
+    ROS,
+    CIDFontVersion,
+    CIDFontRevision,
+    CIDFontType,
+    CIDCount,
+    UIDBase,
+    FDArray,
+    FDSelect,
+    FontName,
+}</pre><div class='docblock'><p>An operator.</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.Version' class='variant'><span id='Version.v' class='invisible'><code>Version</code></span></span><span id='variant.Notice' class='variant'><span id='Notice.v' class='invisible'><code>Notice</code></span></span><span id='variant.FullName' class='variant'><span id='FullName.v' class='invisible'><code>FullName</code></span></span><span id='variant.FamilyName' class='variant'><span id='FamilyName.v' class='invisible'><code>FamilyName</code></span></span><span id='variant.Weight' class='variant'><span id='Weight.v' class='invisible'><code>Weight</code></span></span><span id='variant.FontBBox' class='variant'><span id='FontBBox.v' class='invisible'><code>FontBBox</code></span></span><span id='variant.BlueValues' class='variant'><span id='BlueValues.v' class='invisible'><code>BlueValues</code></span></span><span id='variant.OtherBlues' class='variant'><span id='OtherBlues.v' class='invisible'><code>OtherBlues</code></span></span><span id='variant.FamilyBlues' class='variant'><span id='FamilyBlues.v' class='invisible'><code>FamilyBlues</code></span></span><span id='variant.FamilyOtherBlues' class='variant'><span id='FamilyOtherBlues.v' class='invisible'><code>FamilyOtherBlues</code></span></span><span id='variant.StdHW' class='variant'><span id='StdHW.v' class='invisible'><code>StdHW</code></span></span><span id='variant.StdVW' class='variant'><span id='StdVW.v' class='invisible'><code>StdVW</code></span></span><span id='variant.UniqueID' class='variant'><span id='UniqueID.v' class='invisible'><code>UniqueID</code></span></span><span id='variant.XUID' class='variant'><span id='XUID.v' class='invisible'><code>XUID</code></span></span><span id='variant.CharSet' class='variant'><span id='CharSet.v' class='invisible'><code>CharSet</code></span></span><span id='variant.Encoding' class='variant'><span id='Encoding.v' class='invisible'><code>Encoding</code></span></span><span id='variant.CharStrings' class='variant'><span id='CharStrings.v' class='invisible'><code>CharStrings</code></span></span><span id='variant.Private' class='variant'><span id='Private.v' class='invisible'><code>Private</code></span></span><span id='variant.Subrs' class='variant'><span id='Subrs.v' class='invisible'><code>Subrs</code></span></span><span id='variant.DefaultWidthX' class='variant'><span id='DefaultWidthX.v' class='invisible'><code>DefaultWidthX</code></span></span><span id='variant.NominalWidthX' class='variant'><span id='NominalWidthX.v' class='invisible'><code>NominalWidthX</code></span></span><span id='variant.Copyright' class='variant'><span id='Copyright.v' class='invisible'><code>Copyright</code></span></span><span id='variant.IsFixedPitch' class='variant'><span id='IsFixedPitch.v' class='invisible'><code>IsFixedPitch</code></span></span><span id='variant.ItalicAngle' class='variant'><span id='ItalicAngle.v' class='invisible'><code>ItalicAngle</code></span></span><span id='variant.UnderlinePosition' class='variant'><span id='UnderlinePosition.v' class='invisible'><code>UnderlinePosition</code></span></span><span id='variant.UnderlineThickness' class='variant'><span id='UnderlineThickness.v' class='invisible'><code>UnderlineThickness</code></span></span><span id='variant.PaintType' class='variant'><span id='PaintType.v' class='invisible'><code>PaintType</code></span></span><span id='variant.CharStringType' class='variant'><span id='CharStringType.v' class='invisible'><code>CharStringType</code></span></span><span id='variant.FontMatrix' class='variant'><span id='FontMatrix.v' class='invisible'><code>FontMatrix</code></span></span><span id='variant.StrokeWidth' class='variant'><span id='StrokeWidth.v' class='invisible'><code>StrokeWidth</code></span></span><span id='variant.BlueScale' class='variant'><span id='BlueScale.v' class='invisible'><code>BlueScale</code></span></span><span id='variant.BlueShift' class='variant'><span id='BlueShift.v' class='invisible'><code>BlueShift</code></span></span><span id='variant.BlueFuzz' class='variant'><span id='BlueFuzz.v' class='invisible'><code>BlueFuzz</code></span></span><span id='variant.StemSnapH' class='variant'><span id='StemSnapH.v' class='invisible'><code>StemSnapH</code></span></span><span id='variant.StemSnapV' class='variant'><span id='StemSnapV.v' class='invisible'><code>StemSnapV</code></span></span><span id='variant.ForceBold' class='variant'><span id='ForceBold.v' class='invisible'><code>ForceBold</code></span></span><span id='variant.LanguageGroup' class='variant'><span id='LanguageGroup.v' class='invisible'><code>LanguageGroup</code></span></span><span id='variant.ExpansionFactor' class='variant'><span id='ExpansionFactor.v' class='invisible'><code>ExpansionFactor</code></span></span><span id='variant.InitialRandomSeed' class='variant'><span id='InitialRandomSeed.v' class='invisible'><code>InitialRandomSeed</code></span></span><span id='variant.SyntheticBase' class='variant'><span id='SyntheticBase.v' class='invisible'><code>SyntheticBase</code></span></span><span id='variant.PostScript' class='variant'><span id='PostScript.v' class='invisible'><code>PostScript</code></span></span><span id='variant.BaseFontName' class='variant'><span id='BaseFontName.v' class='invisible'><code>BaseFontName</code></span></span><span id='variant.BaseFontBlend' class='variant'><span id='BaseFontBlend.v' class='invisible'><code>BaseFontBlend</code></span></span><span id='variant.ROS' class='variant'><span id='ROS.v' class='invisible'><code>ROS</code></span></span><span id='variant.CIDFontVersion' class='variant'><span id='CIDFontVersion.v' class='invisible'><code>CIDFontVersion</code></span></span><span id='variant.CIDFontRevision' class='variant'><span id='CIDFontRevision.v' class='invisible'><code>CIDFontRevision</code></span></span><span id='variant.CIDFontType' class='variant'><span id='CIDFontType.v' class='invisible'><code>CIDFontType</code></span></span><span id='variant.CIDCount' class='variant'><span id='CIDCount.v' class='invisible'><code>CIDCount</code></span></span><span id='variant.UIDBase' class='variant'><span id='UIDBase.v' class='invisible'><code>UIDBase</code></span></span><span id='variant.FDArray' class='variant'><span id='FDArray.v' class='invisible'><code>FDArray</code></span></span><span id='variant.FDSelect' class='variant'><span id='FDSelect.v' class='invisible'><code>FDSelect</code></span></span><span id='variant.FontName' class='variant'><span id='FontName.v' class='invisible'><code>FontName</code></span></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-542' class='srclink' href='../../src/postscript/compact/operation.rs.html#114-133' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class='method'><span id='default.v' class='invisible'><code>fn <a href='#method.default' class='fnname'>default</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;'static [</a><a class='type' href='../../postscript/compact/type.Operand.html' title='postscript::compact::Operand'>Operand</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>&gt;</code></span></h4>
+<div class='docblock'><p>Return the default operands.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-415' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class='method'><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class='method'><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html' title='core::hash::Hash'>Hash</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-421' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class='method'><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the state given, updating the hasher as necessary.</p>
+</div><h4 id='method.hash_slice' class='method'><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[Self]</a>, state: &amp;mut H) <span class='where'>where H: <a class='trait' href='https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html' title='core::hash::Hasher'>Hasher</a></span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the state provided.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html' title='core::cmp::Eq'>Eq</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-426' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-429' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-485' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-486' class='srclink' href='../../src/postscript/compact/operation.rs.html#111' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../postscript/compact/enum.Operator.html' title='postscript::compact::Operator'>Operator</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "postscript";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

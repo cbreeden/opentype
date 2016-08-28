@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Flags","Lookup flags."],["Lookups","A lookup list."],["Record","A lookup record."]]});

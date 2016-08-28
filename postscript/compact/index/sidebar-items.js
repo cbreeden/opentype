@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CharStrings","A char-string index."],["Dictionaries","A dictionary index."],["Index","An index."],["Names","A name index."],["Strings","A string index."],["Subroutines","A subroutine index."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["WindowsMetrics","OS/2 and Windows metrics."]],"struct":[["SelectionFlags","Font-selection flags."],["TypeFlags","Type flags."],["WindowsMetrics3","OS/2 and Windows metrics of version 3.0."],["WindowsMetrics5","OS/2 and Windows metrics of version 5.0."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Operator","An operator."]],"struct":[["Program","A program."]],"type":[["Operand","An operand."],["Operation","An operation."],["Operations","A collection of operations."]]});

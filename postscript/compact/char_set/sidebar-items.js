@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CharSet","A char set."]],"struct":[["CharSet1","A char set in format 1."],["Range1","A range of a char set in format 1."]]});

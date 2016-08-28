@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Header","The header of an offset table."],["OffsetTable","An offset table."],["Record","A record of an offset table."]]});

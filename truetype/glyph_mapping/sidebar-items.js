@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["GlyphMapping","A glyph-to-location mapping."]]});

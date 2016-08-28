@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `glyph_transformation` mod in crate `opentype`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, glyph_transformation">
+
+    <title>opentype::glyph_transformation - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opentype</a></p><script>window.sidebarCurrent = {name: 'glyph_transformation', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>opentype</a>::<wbr><a class='mod' href=''>glyph_transformation</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-5611' class='srclink' href='../../src/opentype/src/glyph_transformation/mod.rs.html#1-20' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The <a href="https://www.microsoft.com/typography/otspec/chapter2.htm">common layout</a> of glyph transformations.</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use self::<a class='mod'
+                                       href='./feature/index.html'>feature</a>::<a class='struct' href='../../opentype/glyph_transformation/feature/struct.Features.html' title='opentype::glyph_transformation::feature::Features'>Features</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./lookup/index.html'>lookup</a>::<a class='struct' href='../../opentype/glyph_transformation/lookup/struct.Lookups.html' title='opentype::glyph_transformation::lookup::Lookups'>Lookups</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
+                                       href='./script/index.html'>script</a>::<a class='struct' href='../../opentype/glyph_transformation/script/struct.Scripts.html' title='opentype::glyph_transformation::script::Scripts'>Scripts</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='feature/index.html'
+                                  title='opentype::glyph_transformation::feature'>feature</a></td>
+                           <td class='docblock short'>
+                                <p>The feature list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='lookup/index.html'
+                                  title='opentype::glyph_transformation::lookup'>lookup</a></td>
+                           <td class='docblock short'>
+                                <p>The lookup list.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='script/index.html'
+                                  title='opentype::glyph_transformation::script'>script</a></td>
+                           <td class='docblock short'>
+                                <p>The script list.</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Class1.html'
+                                  title='opentype::glyph_transformation::Class1'>Class1</a></td>
+                           <td class='docblock short'>
+                                <p>A class definition in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Class2.html'
+                                  title='opentype::glyph_transformation::Class2'>Class2</a></td>
+                           <td class='docblock short'>
+                                <p>A class definition in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClassRange.html'
+                                  title='opentype::glyph_transformation::ClassRange'>ClassRange</a></td>
+                           <td class='docblock short'>
+                                <p>A class range.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Coverage1.html'
+                                  title='opentype::glyph_transformation::Coverage1'>Coverage1</a></td>
+                           <td class='docblock short'>
+                                <p>A coverage table in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Coverage2.html'
+                                  title='opentype::glyph_transformation::Coverage2'>Coverage2</a></td>
+                           <td class='docblock short'>
+                                <p>A coverage table in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CoverageRange.html'
+                                  title='opentype::glyph_transformation::CoverageRange'>CoverageRange</a></td>
+                           <td class='docblock short'>
+                                <p>A coverage range.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Device.html'
+                                  title='opentype::glyph_transformation::Device'>Device</a></td>
+                           <td class='docblock short'>
+                                <p>A device adjustment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Directory.html'
+                                  title='opentype::glyph_transformation::Directory'>Directory</a></td>
+                           <td class='docblock short'>
+                                <p>A directory of scripts, features, and lookups.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Header.html'
+                                  title='opentype::glyph_transformation::Header'>Header</a></td>
+                           <td class='docblock short'>
+                                <p>The header of a directory table.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Class.html'
+                                  title='opentype::glyph_transformation::Class'>Class</a></td>
+                           <td class='docblock short'>
+                                <p>A class definition.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Coverage.html'
+                                  title='opentype::glyph_transformation::Coverage'>Coverage</a></td>
+                           <td class='docblock short'>
+                                <p>A coverage table.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opentype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

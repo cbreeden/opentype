@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `FontHeader` struct in crate `truetype`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, FontHeader">
+
+    <title>truetype::font_header::FontHeader - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>truetype</a>::<wbr><a href='index.html'>font_header</a></p><script>window.sidebarCurrent = {name: 'FontHeader', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>truetype</a>::<wbr><a href='index.html'>font_header</a>::<wbr><a class='struct' href=''>FontHeader</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-650' class='srclink' href='../../src/truetype/macros.rs.html#57' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct FontHeader {
+    pub version: <a class='struct' href='../../truetype/struct.q32.html' title='truetype::q32'>q32</a>,
+    pub revision: <a class='struct' href='../../truetype/struct.q32.html' title='truetype::q32'>q32</a>,
+    pub checksum_adjustment: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    pub magic_number: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>,
+    pub flags: <a class='struct' href='../../truetype/font_header/struct.Flags.html' title='truetype::font_header::Flags'>Flags</a>,
+    pub units_per_em: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>,
+    pub created: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+    pub modified: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a>,
+    pub min_x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub min_y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub max_x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub max_y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub mac_style: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>,
+    pub lowest_ppem: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>,
+    pub direction_hint: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub glyph_mapping_format: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+    pub glyph_data_format: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a>,
+}</pre><div class='docblock'><p>A font header.</p>
+</div><h2 class='fields'>Fields</h2><span id='structfield.version' class='structfield'>
+                           <span id='version.v' class='invisible'>
+                           <code>version: <a class='struct' href='../../truetype/struct.q32.html' title='truetype::q32'>q32</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.revision' class='structfield'>
+                           <span id='revision.v' class='invisible'>
+                           <code>revision: <a class='struct' href='../../truetype/struct.q32.html' title='truetype::q32'>q32</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.checksum_adjustment' class='structfield'>
+                           <span id='checksum_adjustment.v' class='invisible'>
+                           <code>checksum_adjustment: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.magic_number' class='structfield'>
+                           <span id='magic_number.v' class='invisible'>
+                           <code>magic_number: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.flags' class='structfield'>
+                           <span id='flags.v' class='invisible'>
+                           <code>flags: <a class='struct' href='../../truetype/font_header/struct.Flags.html' title='truetype::font_header::Flags'>Flags</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.units_per_em' class='structfield'>
+                           <span id='units_per_em.v' class='invisible'>
+                           <code>units_per_em: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.created' class='structfield'>
+                           <span id='created.v' class='invisible'>
+                           <code>created: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.modified' class='structfield'>
+                           <span id='modified.v' class='invisible'>
+                           <code>modified: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i64.html'>i64</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.min_x' class='structfield'>
+                           <span id='min_x.v' class='invisible'>
+                           <code>min_x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.min_y' class='structfield'>
+                           <span id='min_y.v' class='invisible'>
+                           <code>min_y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.max_x' class='structfield'>
+                           <span id='max_x.v' class='invisible'>
+                           <code>max_x: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.max_y' class='structfield'>
+                           <span id='max_y.v' class='invisible'>
+                           <code>max_y: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.mac_style' class='structfield'>
+                           <span id='mac_style.v' class='invisible'>
+                           <code>mac_style: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.lowest_ppem' class='structfield'>
+                           <span id='lowest_ppem.v' class='invisible'>
+                           <code>lowest_ppem: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.direction_hint' class='structfield'>
+                           <span id='direction_hint.v' class='invisible'>
+                           <code>direction_hint: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.glyph_mapping_format' class='structfield'>
+                           <span id='glyph_mapping_format.v' class='invisible'>
+                           <code>glyph_mapping_format: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><span id='structfield.glyph_data_format' class='structfield'>
+                           <span id='glyph_data_format.v' class='invisible'>
+                           <code>glyph_data_format: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i16.html'>i16</a></code>
+                           </span></span><span class='stab '></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-607' class='srclink' href='../../src/truetype/font_header.rs.html#9' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='struct' href='../../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-608' class='srclink' href='../../src/truetype/macros.rs.html#56' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-630' class='srclink' href='../../src/truetype/macros.rs.html#56' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../truetype/trait.Value.html' title='truetype::Value'>Value</a> for <a class='struct' href='../../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-668' class='srclink' href='../../src/truetype/macros.rs.html#62-72' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.read' class='method'><span id='read.v' class='invisible'><code>fn <a href='../../truetype/trait.Value.html#tymethod.read' class='fnname'>read</a>&lt;T:&nbsp;<a class='trait' href='../../truetype/trait.Tape.html' title='truetype::Tape'>Tape</a>&gt;(tape: &amp;mut T) -&gt; <a class='type' href='../../truetype/type.Result.html' title='truetype::Result'>Result</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Read a value.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "truetype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

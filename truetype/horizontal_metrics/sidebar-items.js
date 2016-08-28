@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HorizontalMetrics","Horizontal metrics."],["Record","A record of horizontal metrics."]]});

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Table` enum in crate `opentype`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Table">
+
+    <title>opentype::glyph_positioning::Table - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opentype</a>::<wbr><a href='index.html'>glyph_positioning</a></p><script>window.sidebarCurrent = {name: 'Table', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content enum">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>opentype</a>::<wbr><a href='index.html'>glyph_positioning</a>::<wbr><a class='enum' href=''>Table</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-2160' class='srclink' href='../../src/opentype/src/glyph_positioning/table.rs.html#23-33' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'>pub enum Table {
+    SingleAdjustment(<a class='enum' href='../../opentype/glyph_positioning/enum.SingleAdjustment.html' title='opentype::glyph_positioning::SingleAdjustment'>SingleAdjustment</a>),
+    PairAdjustment(<a class='enum' href='../../opentype/glyph_positioning/enum.PairAdjustment.html' title='opentype::glyph_positioning::PairAdjustment'>PairAdjustment</a>),
+    CursiveAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.CursiveAttachment.html' title='opentype::glyph_positioning::CursiveAttachment'>CursiveAttachment</a>),
+    MarkToBaseAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToBaseAttachment.html' title='opentype::glyph_positioning::MarkToBaseAttachment'>MarkToBaseAttachment</a>),
+    MarkToLigatureAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToLigatureAttachment.html' title='opentype::glyph_positioning::MarkToLigatureAttachment'>MarkToLigatureAttachment</a>),
+    MarkToMarkAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToMarkAttachment.html' title='opentype::glyph_positioning::MarkToMarkAttachment'>MarkToMarkAttachment</a>),
+    ContextPositioning(<a class='enum' href='../../opentype/glyph_positioning/enum.ContextPositioning.html' title='opentype::glyph_positioning::ContextPositioning'>ContextPositioning</a>),
+    ChainContextPositioning(<a class='enum' href='../../opentype/glyph_positioning/enum.ChainContextPositioning.html' title='opentype::glyph_positioning::ChainContextPositioning'>ChainContextPositioning</a>),
+    ExtensionPositioning(<a class='struct' href='../../opentype/glyph_positioning/struct.ExtensionPositioning.html' title='opentype::glyph_positioning::ExtensionPositioning'>ExtensionPositioning</a>),
+}</pre><div class='docblock'><p>An inner table of a glyph-positioning table.</p>
+</div><h2 class='variants'>Variants</h2>
+<span id='variant.SingleAdjustment' class='variant'><span id='SingleAdjustment.v' class='invisible'><code>SingleAdjustment(<a class='enum' href='../../opentype/glyph_positioning/enum.SingleAdjustment.html' title='opentype::glyph_positioning::SingleAdjustment'>SingleAdjustment</a>)</code></span></span><span id='variant.PairAdjustment' class='variant'><span id='PairAdjustment.v' class='invisible'><code>PairAdjustment(<a class='enum' href='../../opentype/glyph_positioning/enum.PairAdjustment.html' title='opentype::glyph_positioning::PairAdjustment'>PairAdjustment</a>)</code></span></span><span id='variant.CursiveAttachment' class='variant'><span id='CursiveAttachment.v' class='invisible'><code>CursiveAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.CursiveAttachment.html' title='opentype::glyph_positioning::CursiveAttachment'>CursiveAttachment</a>)</code></span></span><span id='variant.MarkToBaseAttachment' class='variant'><span id='MarkToBaseAttachment.v' class='invisible'><code>MarkToBaseAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToBaseAttachment.html' title='opentype::glyph_positioning::MarkToBaseAttachment'>MarkToBaseAttachment</a>)</code></span></span><span id='variant.MarkToLigatureAttachment' class='variant'><span id='MarkToLigatureAttachment.v' class='invisible'><code>MarkToLigatureAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToLigatureAttachment.html' title='opentype::glyph_positioning::MarkToLigatureAttachment'>MarkToLigatureAttachment</a>)</code></span></span><span id='variant.MarkToMarkAttachment' class='variant'><span id='MarkToMarkAttachment.v' class='invisible'><code>MarkToMarkAttachment(<a class='struct' href='../../opentype/glyph_positioning/struct.MarkToMarkAttachment.html' title='opentype::glyph_positioning::MarkToMarkAttachment'>MarkToMarkAttachment</a>)</code></span></span><span id='variant.ContextPositioning' class='variant'><span id='ContextPositioning.v' class='invisible'><code>ContextPositioning(<a class='enum' href='../../opentype/glyph_positioning/enum.ContextPositioning.html' title='opentype::glyph_positioning::ContextPositioning'>ContextPositioning</a>)</code></span></span><span id='variant.ChainContextPositioning' class='variant'><span id='ChainContextPositioning.v' class='invisible'><code>ChainContextPositioning(<a class='enum' href='../../opentype/glyph_positioning/enum.ChainContextPositioning.html' title='opentype::glyph_positioning::ChainContextPositioning'>ChainContextPositioning</a>)</code></span></span><span id='variant.ExtensionPositioning' class='variant'><span id='ExtensionPositioning.v' class='invisible'><code>ExtensionPositioning(<a class='struct' href='../../opentype/glyph_positioning/struct.ExtensionPositioning.html' title='opentype::glyph_positioning::ExtensionPositioning'>ExtensionPositioning</a>)</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../../opentype/glyph_positioning/enum.Table.html' title='opentype::glyph_positioning::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2126' class='srclink' href='../../src/opentype/src/glyph_positioning/table.rs.html#22' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class='method'><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='enum' href='../../opentype/glyph_positioning/enum.Table.html' title='opentype::glyph_positioning::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-2148' class='srclink' href='../../src/opentype/src/glyph_positioning/table.rs.html#22' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class='method'><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='enum' href='../../opentype/glyph_positioning/enum.Table.html' title='opentype::glyph_positioning::Table'>Table</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class='method'><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../truetype/tape/trait.Walue.html' title='truetype::tape::Walue'>Walue</a>&lt;'static&gt; for <a class='enum' href='../../opentype/glyph_positioning/enum.Table.html' title='opentype::glyph_positioning::Table'>Table</a></code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3642' class='srclink' href='../../src/opentype/src/glyph_positioning/table.rs.html#464-481' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Parameter' class='type'><span id='Parameter.t' class='invisible'><code>type <a href='../../truetype/tape/trait.Walue.html#associatedtype.Parameter' class='type'>Parameter</a> = <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></span></h4>
+<div class='docblock'><p>The parameter type.</p>
+</div><h4 id='method.read' class='method'><span id='read.v' class='invisible'><code>fn <a href='../../truetype/tape/trait.Walue.html#tymethod.read' class='fnname'>read</a>&lt;T:&nbsp;<a class='trait' href='../../truetype/tape/trait.Tape.html' title='truetype::tape::Tape'>Tape</a>&gt;(tape: &amp;mut T, kind: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>) -&gt; <a class='type' href='../../truetype/type.Result.html' title='truetype::Result'>Result</a>&lt;Self&gt;</code></span></h4>
+<div class='docblock'><p>Read a value.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opentype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

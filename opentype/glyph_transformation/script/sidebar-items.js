@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Language","A language system."],["Script","A script."]],"struct":[["Header","A script header."],["LanguageHeader","A language-system header."],["LanguageRecord","A language-system record."],["Record","A script record."],["Scripts","A script list."]]});

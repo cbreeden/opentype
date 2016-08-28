@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["NamingTable","A naming table."]],"struct":[["Language","A language-tag record of a naming table."],["NamingTable0","A naming table in format 0."],["NamingTable1","A naming table in format 1."],["Record","A record of a naming table."]]});

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `truetype` crate.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, truetype">
+
+    <title>truetype - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'></p><script>window.sidebarCurrent = {name: 'truetype', ty: 'mod', relpath: '../'};</script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>truetype</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/truetype/lib.rs.html#1-44' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>Parser for TrueType fonts.</p>
+</div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
+<table><tr><td><code>pub use char_mapping::<a class='struct' href='../truetype/char_mapping/struct.CharMapping.html' title='truetype::char_mapping::CharMapping'>CharMapping</a>;</code></td></tr><tr><td><code>pub use font_header::<a class='struct' href='../truetype/font_header/struct.FontHeader.html' title='truetype::font_header::FontHeader'>FontHeader</a>;</code></td></tr><tr><td><code>pub use glyph_data::<a class='struct' href='../truetype/glyph_data/struct.GlyphData.html' title='truetype::glyph_data::GlyphData'>GlyphData</a>;</code></td></tr><tr><td><code>pub use glyph_mapping::<a class='enum' href='../truetype/glyph_mapping/enum.GlyphMapping.html' title='truetype::glyph_mapping::GlyphMapping'>GlyphMapping</a>;</code></td></tr><tr><td><code>pub use horizontal_header::<a class='struct' href='../truetype/horizontal_header/struct.HorizontalHeader.html' title='truetype::horizontal_header::HorizontalHeader'>HorizontalHeader</a>;</code></td></tr><tr><td><code>pub use horizontal_metrics::<a class='struct' href='../truetype/horizontal_metrics/struct.HorizontalMetrics.html' title='truetype::horizontal_metrics::HorizontalMetrics'>HorizontalMetrics</a>;</code></td></tr><tr><td><code>pub use maximum_profile::<a class='enum' href='../truetype/maximum_profile/enum.MaximumProfile.html' title='truetype::maximum_profile::MaximumProfile'>MaximumProfile</a>;</code></td></tr><tr><td><code>pub use naming_table::<a class='enum' href='../truetype/naming_table/enum.NamingTable.html' title='truetype::naming_table::NamingTable'>NamingTable</a>;</code></td></tr><tr><td><code>pub use offset_table::<a class='struct' href='../truetype/offset_table/struct.OffsetTable.html' title='truetype::offset_table::OffsetTable'>OffsetTable</a>;</code></td></tr><tr><td><code>pub use postscript::<a class='enum' href='../truetype/postscript/enum.PostScript.html' title='truetype::postscript::PostScript'>PostScript</a>;</code></td></tr><tr><td><code>pub use windows_metrics::<a class='enum' href='../truetype/windows_metrics/enum.WindowsMetrics.html' title='truetype::windows_metrics::WindowsMetrics'>WindowsMetrics</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='char_mapping/index.html'
+                                  title='truetype::char_mapping'>char_mapping</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/cmap.htm">char-to-glyph mapping</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='font_header/index.html'
+                                  title='truetype::font_header'>font_header</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/head.htm">font header</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='glyph_data/index.html'
+                                  title='truetype::glyph_data'>glyph_data</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/glyf.htm">glyph data</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='glyph_mapping/index.html'
+                                  title='truetype::glyph_mapping'>glyph_mapping</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/loca.htm">glyph-to-location mapping</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='horizontal_header/index.html'
+                                  title='truetype::horizontal_header'>horizontal_header</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/hhea.htm">horizontal header</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='horizontal_metrics/index.html'
+                                  title='truetype::horizontal_metrics'>horizontal_metrics</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/hmtx.htm">horizontal metrics</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='maximum_profile/index.html'
+                                  title='truetype::maximum_profile'>maximum_profile</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/maxp.htm">maximum profile</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='naming_table/index.html'
+                                  title='truetype::naming_table'>naming_table</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/name.htm">naming table</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='offset_table/index.html'
+                                  title='truetype::offset_table'>offset_table</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/otff.htm">offset table</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='postscript/index.html'
+                                  title='truetype::postscript'>postscript</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/post.htm">PostScript information</a>.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='mod' href='windows_metrics/index.html'
+                                  title='truetype::windows_metrics'>windows_metrics</a></td>
+                           <td class='docblock short'>
+                                <p>The <a href="https://www.microsoft.com/typography/otspec/os2.htm">OS/2 and Windows metrics</a>.</p>
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Tag.html'
+                                  title='truetype::Tag'>Tag</a></td>
+                           <td class='docblock short'>
+                                <p>A tag.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.q16.html'
+                                  title='truetype::q16'>q16</a></td>
+                           <td class='docblock short'>
+                                <p>A fixed-point number in format Q2.14.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.q32.html'
+                                  title='truetype::q32'>q32</a></td>
+                           <td class='docblock short'>
+                                <p>A fixed-point number in format Q16.16.</p>
+                           </td>
+                       </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Tape.html'
+                                  title='truetype::Tape'>Tape</a></td>
+                           <td class='docblock short'>
+                                <p>A type that can read.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Value.html'
+                                  title='truetype::Value'>Value</a></td>
+                           <td class='docblock short'>
+                                <p>A type that can be read.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='trait' href='trait.Walue.html'
+                                  title='truetype::Walue'>Walue</a></td>
+                           <td class='docblock short'>
+                                <p>A type that can be read given a parameter.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Error.html'
+                                  title='truetype::Error'>Error</a></td>
+                           <td class='docblock short'>
+                                <p>An error.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlyphID.html'
+                                  title='truetype::GlyphID'>GlyphID</a></td>
+                           <td class='docblock short'>
+                                <p>A glyph identifier.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.Result.html'
+                                  title='truetype::Result'>Result</a></td>
+                           <td class='docblock short'>
+                                <p>A result.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "truetype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

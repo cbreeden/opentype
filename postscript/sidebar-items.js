@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["compact","The [compact font format][1]."],["type2","The [Type 2 char-string format][1]."]],"trait":[["Tape","A type that can read."],["Value","A type that can be read."],["Walue","A type that can be read given a parameter."]],"type":[["Error","An error."],["Result","A result."]]});

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `glyph_positioning` mod in crate `opentype`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, glyph_positioning">
+
+    <title>opentype::glyph_positioning - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opentype</a></p><script>window.sidebarCurrent = {name: 'glyph_positioning', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>opentype</a>::<wbr><a class='mod' href=''>glyph_positioning</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-846' class='srclink' href='../../src/opentype/src/glyph_positioning/mod.rs.html#1-14' title='goto source code'>[src]</a></span></h1>
+<div class='docblock'><p>The <a href="https://www.microsoft.com/typography/otspec/gpos.htm">glyph-positioning table</a>.</p>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Anchor1.html'
+                                  title='opentype::glyph_positioning::Anchor1'>Anchor1</a></td>
+                           <td class='docblock short'>
+                                <p>An anchor in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Anchor2.html'
+                                  title='opentype::glyph_positioning::Anchor2'>Anchor2</a></td>
+                           <td class='docblock short'>
+                                <p>An anchor in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Anchor3.html'
+                                  title='opentype::glyph_positioning::Anchor3'>Anchor3</a></td>
+                           <td class='docblock short'>
+                                <p>An anchor in format 3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Base.html'
+                                  title='opentype::glyph_positioning::Base'>Base</a></td>
+                           <td class='docblock short'>
+                                <p>A base attachment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Bases.html'
+                                  title='opentype::glyph_positioning::Bases'>Bases</a></td>
+                           <td class='docblock short'>
+                                <p>A set of base attachments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainClassRule.html'
+                                  title='opentype::glyph_positioning::ChainClassRule'>ChainClassRule</a></td>
+                           <td class='docblock short'>
+                                <p>A chaining class positioning rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainClassRules.html'
+                                  title='opentype::glyph_positioning::ChainClassRules'>ChainClassRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of chaining class positioning rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextPositioning1.html'
+                                  title='opentype::glyph_positioning::ChainContextPositioning1'>ChainContextPositioning1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a chaining context in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextPositioning2.html'
+                                  title='opentype::glyph_positioning::ChainContextPositioning2'>ChainContextPositioning2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a chaining context in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainContextPositioning3.html'
+                                  title='opentype::glyph_positioning::ChainContextPositioning3'>ChainContextPositioning3</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a chaining context in format 3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainRule.html'
+                                  title='opentype::glyph_positioning::ChainRule'>ChainRule</a></td>
+                           <td class='docblock short'>
+                                <p>A chaining positioning rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ChainRules.html'
+                                  title='opentype::glyph_positioning::ChainRules'>ChainRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of chaining positioning rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClassRule.html'
+                                  title='opentype::glyph_positioning::ClassRule'>ClassRule</a></td>
+                           <td class='docblock short'>
+                                <p>A class positioning rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ClassRules.html'
+                                  title='opentype::glyph_positioning::ClassRules'>ClassRules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of class positioning rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Component.html'
+                                  title='opentype::glyph_positioning::Component'>Component</a></td>
+                           <td class='docblock short'>
+                                <p>A component attachment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextPositioning1.html'
+                                  title='opentype::glyph_positioning::ContextPositioning1'>ContextPositioning1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a context in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextPositioning2.html'
+                                  title='opentype::glyph_positioning::ContextPositioning2'>ContextPositioning2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a context in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ContextPositioning3.html'
+                                  title='opentype::glyph_positioning::ContextPositioning3'>ContextPositioning3</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a context in format 3.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.CursiveAttachment.html'
+                                  title='opentype::glyph_positioning::CursiveAttachment'>CursiveAttachment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for attaching cursive glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.ExtensionPositioning.html'
+                                  title='opentype::glyph_positioning::ExtensionPositioning'>ExtensionPositioning</a></td>
+                           <td class='docblock short'>
+                                <p>A table for other types of positioning.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ligature.html'
+                                  title='opentype::glyph_positioning::Ligature'>Ligature</a></td>
+                           <td class='docblock short'>
+                                <p>A ligature attachment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Ligatures.html'
+                                  title='opentype::glyph_positioning::Ligatures'>Ligatures</a></td>
+                           <td class='docblock short'>
+                                <p>A set of ligature attachments.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Mark1.html'
+                                  title='opentype::glyph_positioning::Mark1'>Mark1</a></td>
+                           <td class='docblock short'>
+                                <p>A mark attachment in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Mark1s.html'
+                                  title='opentype::glyph_positioning::Mark1s'>Mark1s</a></td>
+                           <td class='docblock short'>
+                                <p>A set of mark attachments in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Mark2.html'
+                                  title='opentype::glyph_positioning::Mark2'>Mark2</a></td>
+                           <td class='docblock short'>
+                                <p>A mark attachment in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Mark2s.html'
+                                  title='opentype::glyph_positioning::Mark2s'>Mark2s</a></td>
+                           <td class='docblock short'>
+                                <p>A set of mark attachments in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MarkToBaseAttachment.html'
+                                  title='opentype::glyph_positioning::MarkToBaseAttachment'>MarkToBaseAttachment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for attaching combining marks to base glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MarkToLigatureAttachment.html'
+                                  title='opentype::glyph_positioning::MarkToLigatureAttachment'>MarkToLigatureAttachment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for attaching combining marks to ligatures.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.MarkToMarkAttachment.html'
+                                  title='opentype::glyph_positioning::MarkToMarkAttachment'>MarkToMarkAttachment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for attaching combining marks to other marks.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pair1.html'
+                                  title='opentype::glyph_positioning::Pair1'>Pair1</a></td>
+                           <td class='docblock short'>
+                                <p>A pair adjustment in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pair1s.html'
+                                  title='opentype::glyph_positioning::Pair1s'>Pair1s</a></td>
+                           <td class='docblock short'>
+                                <p>A set of pair adjustments in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pair2.html'
+                                  title='opentype::glyph_positioning::Pair2'>Pair2</a></td>
+                           <td class='docblock short'>
+                                <p>A pair adjustment in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Pair2s.html'
+                                  title='opentype::glyph_positioning::Pair2s'>Pair2s</a></td>
+                           <td class='docblock short'>
+                                <p>A set of pair adjustments in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PairAdjustment1.html'
+                                  title='opentype::glyph_positioning::PairAdjustment1'>PairAdjustment1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting pairs of glyphs in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.PairAdjustment2.html'
+                                  title='opentype::glyph_positioning::PairAdjustment2'>PairAdjustment2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting pairs of glyphs in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Passage.html'
+                                  title='opentype::glyph_positioning::Passage'>Passage</a></td>
+                           <td class='docblock short'>
+                                <p>An entry-exit record.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Positioning.html'
+                                  title='opentype::glyph_positioning::Positioning'>Positioning</a></td>
+                           <td class='docblock short'>
+                                <p>A positioning record.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rule.html'
+                                  title='opentype::glyph_positioning::Rule'>Rule</a></td>
+                           <td class='docblock short'>
+                                <p>A positioning rule.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Rules.html'
+                                  title='opentype::glyph_positioning::Rules'>Rules</a></td>
+                           <td class='docblock short'>
+                                <p>A set of positioning rules.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Single.html'
+                                  title='opentype::glyph_positioning::Single'>Single</a></td>
+                           <td class='docblock short'>
+                                <p>A single adjustment.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleAdjustment1.html'
+                                  title='opentype::glyph_positioning::SingleAdjustment1'>SingleAdjustment1</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting single glyphs in format 1.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleAdjustment2.html'
+                                  title='opentype::glyph_positioning::SingleAdjustment2'>SingleAdjustment2</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting single glyphs in format 2.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.SingleFlags.html'
+                                  title='opentype::glyph_positioning::SingleFlags'>SingleFlags</a></td>
+                           <td class='docblock short'>
+                                <p>Single-adjustment flags.</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Anchor.html'
+                                  title='opentype::glyph_positioning::Anchor'>Anchor</a></td>
+                           <td class='docblock short'>
+                                <p>An anchor.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ChainContextPositioning.html'
+                                  title='opentype::glyph_positioning::ChainContextPositioning'>ChainContextPositioning</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a chaining context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.ContextPositioning.html'
+                                  title='opentype::glyph_positioning::ContextPositioning'>ContextPositioning</a></td>
+                           <td class='docblock short'>
+                                <p>A table for positioning glyphs in a context.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.PairAdjustment.html'
+                                  title='opentype::glyph_positioning::PairAdjustment'>PairAdjustment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting pairs of glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SingleAdjustment.html'
+                                  title='opentype::glyph_positioning::SingleAdjustment'>SingleAdjustment</a></td>
+                           <td class='docblock short'>
+                                <p>A table for adjusting single glyphs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.Table.html'
+                                  title='opentype::glyph_positioning::Table'>Table</a></td>
+                           <td class='docblock short'>
+                                <p>An inner table of a glyph-positioning table.</p>
+                           </td>
+                       </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class='type' href='type.GlyphPositioning.html'
+                                  title='opentype::glyph_positioning::GlyphPositioning'>GlyphPositioning</a></td>
+                           <td class='docblock short'>
+                                <p>A glyph-positioning table.</p>
+                           </td>
+                       </tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opentype";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
