@@ -1,4 +1,5 @@
-use truetype::{Result, Tape, Value};
+use truetype::{Result, Tape, Walue};
+use std::io::SeekFrom;
 
 use layout::Coverage;
 use super::Quantity;
@@ -73,20 +74,13 @@ table! {
         coverage_offset (u16), // MathKernCoverage
         count           (u16), // MathKernCount
 
-        // FIXME: Make this single pass, using Walue if possible.
-        // `- rename variables to be neutral.
         records (Vec<Kerning>) |this, tape, position| {
-            let mut kern_glyphs: Vec<Kerning> = Vec::with_capacity(this.count as usize);
-            for _ in 0..this.count {
-                kern_glyphs.push(try!(tape.take()));
+            let mut values: Vec<Kerning> = Vec::with_capacity(this.count as usize);
+            println!("Kern count: {}",  this.count);
+            for count in 0..(this.count as u64) {
+                values.push(try!(tape.take_given((position, count))));
             }
-            for kern in &mut kern_glyphs {
-                kern.top_right = jump_take_maybe!(@unwrap tape, position, kern.top_right_offset);
-                kern.top_left = jump_take_maybe!(@unwrap tape, position, kern.top_left_offset);
-                kern.bottom_right = jump_take_maybe!(@unwrap tape, position, kern.bottom_right_offset);
-                kern.bottom_left = jump_take_maybe!(@unwrap tape, position, kern.bottom_left_offset);
-            }
-            Ok(kern_glyphs)
+            Ok(values)
         },
 
         coverage (Coverage) |this, tape, position| {
@@ -126,22 +120,30 @@ table! {
     }
 }
 
-impl Value for Kerning {
-    fn read<T: Tape>(tape: &mut T) -> Result<Self> {
+impl Walue<'static> for Kerning {
+    type Parameter = (u64, u64);
+    
+    fn read<T: Tape>(tape: &mut T, (position, count): Self::Parameter) -> Result<Self> {
         let top_right_offset = try!(tape.take());
         let top_left_offset = try!(tape.take());
         let bottom_right_offset = try!(tape.take());
         let bottom_left_offset = try!(tape.take());
+        let top_right = jump_take_maybe!(@unwrap tape, position, top_right_offset);
+        let top_left = jump_take_maybe!(@unwrap tape, position, top_left_offset);
+        let bottom_right = jump_take_maybe!(@unwrap tape, position, bottom_right_offset);
+        let bottom_left = jump_take_maybe!(@unwrap tape, position, bottom_left_offset);
+
+        try!(tape.seek(SeekFrom::Start(position + 8*(count + 1))));
 
         Ok(Kerning {
             top_right_offset: top_right_offset,
             top_left_offset: top_left_offset,
             bottom_right_offset: bottom_right_offset,
             bottom_left_offset: bottom_left_offset,
-            top_right: None,
-            top_left: None,
-            bottom_right: None,
-            bottom_left: None,
+            top_right: top_right,
+            top_left: top_left,
+            bottom_right: bottom_right,
+            bottom_left: bottom_left,
         })
     }
 }
