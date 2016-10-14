@@ -22,7 +22,7 @@ table! {
             jump_take!(tape, position, this.header.constants_offset)
         },
 
-        glyph_info (Glyphs) |this, tape, position| {
+        glyphs (Glyphs) |this, tape, position| {
             jump_take!(tape, position, this.header.glyph_info_offset)
         },
 

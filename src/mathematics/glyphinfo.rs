@@ -24,7 +24,7 @@ table! {
             jump_take_maybe!(tape, position, this.extended_shape_coverage_offset)
         },
 
-        // According to the specification, kernings are not optional.  However
+        // According to the specification, kernings are not optional.  However,
         // some popular OpenType fonts do not support kernings.
         kernings (Option<Kernings>) |this, tape, position| {
             jump_take_maybe!(tape, position, this.kernings_offset)
@@ -39,7 +39,7 @@ table! {
         coverage_offset (u16), // Coverage
         count           (u16), // ItalicsCorrectionCount
 
-        corrections (Vec<Quantity>) |this, tape, _| { // ItalicsCorrection
+        values (Vec<Quantity>) |this, tape, _| { // ItalicsCorrection
             tape.take_given(this.count as usize)
         },
 
@@ -120,7 +120,7 @@ table! {
             tape.take_given(this.count as usize)
         },
 
-        kern_values (Vec<Quantity>) |this, tape| {
+        values (Vec<Quantity>) |this, tape| {
             tape.take_given(this.count as usize + 1)
         },
     }
