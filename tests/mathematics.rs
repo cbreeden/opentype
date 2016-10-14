@@ -59,7 +59,7 @@ fn glyphs() {
 
     match glyphs.attachments.coverage {
         Coverage::Format2(_) => (),
-        _ => panic!("Parsed incorrect coverage table format for italics corrections."),
+        _ => panic!("Parsed incorrect coverage table format for accent attachments."),
     }
     assert_eq!(glyphs.attachments.count, 1328);
     assert_eq!(glyphs.attachments.values[0].value, 361);
@@ -68,7 +68,7 @@ fn glyphs() {
     if let Some(extended_shapes) = glyphs.extended_shape_coverage {
         match extended_shapes {
             Coverage::Format2(_) => (),
-            _ => panic!("Parsed incorrect coverage table format for italics corrections."),
+            _ => panic!("Parsed incorrect coverage table format for extended shapes."),
         }
     }
 
