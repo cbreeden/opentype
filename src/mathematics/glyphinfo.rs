@@ -76,7 +76,6 @@ table! {
 
         records (Vec<Kerning>) |this, tape, position| {
             let mut values: Vec<Kerning> = Vec::with_capacity(this.count as usize);
-            println!("Kern count: {}",  this.count);
             for count in 0..(this.count as u64) {
                 values.push(try!(tape.take_given((position, count))));
             }

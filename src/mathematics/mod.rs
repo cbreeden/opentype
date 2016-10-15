@@ -8,7 +8,7 @@ mod variants;
 
 pub use self::constants::Constants;
 pub use self::glyphinfo::Glyphs;
-pub use self::variants::Variants;
+pub use self::variants::*;
 
 use layout::Device;
 

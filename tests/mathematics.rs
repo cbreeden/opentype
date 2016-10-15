@@ -41,7 +41,7 @@ fn constants() {
     assert_eq!(constants.delimited_sub_formula_min_height, 1500);
     assert_eq!(constants.math_leading.value, 150);
     assert_eq!(constants.radical_kern_after_degree.value, -555);
-    assert_eq!(constants.radical_degree_bottom_raise_percent, 70);    
+    assert_eq!(constants.radical_degree_bottom_raise_percent, 70);
 }
 
 #[test]
@@ -93,4 +93,24 @@ fn variants() {
     assert_eq!(variants.min_connector_overlap, 50);
     assert_eq!(variants.horizontal_count, 41);
     assert_eq!(variants.vertical_count, 166);
+
+    let vert_glyph = &variants.vertical_constructions[160];
+    assert_eq!(vert_glyph.count, 3);
+    assert_eq!(vert_glyph.variants[1].measurement, 2461);
+
+    let vert_glyph_assembly = vert_glyph.assembly.as_ref().unwrap();
+    assert_eq!(vert_glyph_assembly.count, 3);
+    assert_eq!(vert_glyph_assembly.italics_correction.value, 0);
+    assert_eq!(vert_glyph_assembly.parts[2].start_connector_length, 500);
+    assert_eq!(vert_glyph_assembly.parts[2].advance, 626);
+
+    let horz_glyph = &variants.horizontal_constructions[13];
+    assert_eq!(horz_glyph.count, 1);
+    assert_eq!(horz_glyph.variants[0].measurement, 534);
+
+    let horz_glyph_assembly = horz_glyph.assembly.as_ref().unwrap();
+    assert_eq!(horz_glyph_assembly.count, 3);
+    assert_eq!(horz_glyph_assembly.italics_correction.value, 0);
+    assert_eq!(horz_glyph_assembly.parts[2].start_connector_length, 50);
+    assert_eq!(horz_glyph_assembly.parts[2].advance, 154);
 }
